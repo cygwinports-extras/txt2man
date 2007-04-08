@@ -1,0 +1,13 @@
+DESCRIPTION="Converts ASCII text to man page"
+HOMEPAGE="http://mvertes.free.fr/"
+SRC_URI="http://mvertes.free.fr/download/${P}.tar.gz"
+
+src_compile() { :; }
+
+src_test() { :; }
+
+src_install() {
+	cd ${S}
+	dobin bookman src2man txt2man
+	doman *.1
+}
