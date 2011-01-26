@@ -1,0 +1,4 @@
+category: Text
+requires: awk groff
+sdesc: "Converts text to a man page"
+ldesc: "Txt2man converts flat ASCII text to man page format."
